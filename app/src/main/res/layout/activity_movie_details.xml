@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ImageView для постера фильма -->
+    <ImageView
+        android:id="@+id/posterImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        />
+
+    <!-- Название фильма -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Название фильма"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"/>
+
+    <!-- Жанр фильма -->
+    <TextView
+        android:id="@+id/genreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Жанр"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Год выпуска -->
+    <TextView
+        android:id="@+id/yearTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Год"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Рейтинг фильма -->
+    <TextView
+        android:id="@+id/ratingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Рейтинг"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Ссылка на фильм -->
+    <TextView
+        android:id="@+id/linkTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Перейти по ссылке"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/nameRuTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Русское название: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/webUrlTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ссылка: "
+        android:textSize="16sp" />
+
+</LinearLayout>
