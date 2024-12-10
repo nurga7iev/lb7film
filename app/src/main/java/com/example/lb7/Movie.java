@@ -1,18 +1,19 @@
 package com.example.lb7;
 
 import java.util.List;
-
 public class Movie {
     private String title;
     private List<Genre> genres; // Список жанров
     private int year;
-    private float rating;
+    private float rating;  // Общее значение рейтинга (например, IMDb)
+    private float ratingKinopoisk; // Рейтинг на КиноПоиске
     private String posterUrl;
     private String movieLink;
     private String nameRu; // Русское название фильма
     private String webUrl; // Ссылка на фильм
 
     // Геттеры и сеттеры для каждого поля
+
     public String getTitle() {
         return title;
     }
@@ -43,6 +44,14 @@ public class Movie {
 
     public void setRating(float rating) {
         this.rating = rating;
+    }
+
+    public float getRatingKinopoisk() {
+        return ratingKinopoisk;
+    }
+
+    public void setRatingKinopoisk(float ratingKinopoisk) {
+        this.ratingKinopoisk = ratingKinopoisk;
     }
 
     public String getPosterUrl() {
